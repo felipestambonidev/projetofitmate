@@ -1,46 +1,54 @@
 import { Link } from "expo-router";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
+import { MaterialIcons } from "@expo/vector-icons";
+import Linha from "../src/components/linha/Linha";
+import MenuInicial from "../src/components/menuinicial/MenuInicial";
 
 export default function Page() {
   return (
     <View className="flex-1 justify-center items-center bg-white">
+      <MenuInicial />
       <View className="w-4/5 mt-5">
-        <TextInput
-          className="border p-2 rounded- mb-4"
-          placeholder="Número de telefone / E-mail"
-          keyboardType="email-address"
-          autoCapitalize="none"
-        />
-
-        <TextInput
-          className="border p-2 rounded-full mb-4"
-          placeholder="Senha"
-          secureTextEntry
-          autoCapitalize="none"
-        />
+        <View className="flex-row items-center border p-2 rounded-full mb-4">
+          <MaterialIcons name="person" size={20} color="black" />
+          <TextInput
+            className="flex-1 ml-2"
+            placeholder="Digite o seu e-mail/usuário"
+            placeholderTextColor="black"
+            autoCapitalize="words"
+          />
+        </View>
+        <View className="flex-row items center border p-2 rounded-full mb-4">
+          <MaterialIcons name="key" size={20} color="black" />
+          <TextInput
+            className="flex-1 ml-2"
+            placeholder="Digite a sua senha"
+            placeholderTextColor="black"
+            secureTextEntry
+            autoCapitalize="none"
+          />
+        </View>
 
         <TouchableOpacity>
-          <Text className="text-right text-blue-500 mb-4">
-            Esqueci minha senha
+          <Text className="text-right text-blue-500 font mb-4 pr-2">
+            Esqueci a minha senha
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity className="bg-blue-500 p-3 rounded-md mb-4">
-          <Text className="text-center text-white">Entrar</Text>
+        <TouchableOpacity className="bg-blue-500 p-3 rounded-full">
+          <Link href="/main" className="text-center text-white">
+            Entrar
+          </Link>
         </TouchableOpacity>
 
-        <TouchableOpacity className="border border-blue-500 p-3 rounded-md mb-4">
-          <Link href="/create-account"className="text-center text-blue-500">Criar conta FitMate</Link>
+        <TouchableOpacity className="border border-blue-500 p-3 mt-4 mb-4 rounded-full">
+          <Link href="/create-account" className="text-blue-500 text-center">
+            Criar Conta FitMate
+          </Link>
         </TouchableOpacity>
 
-        <TouchableOpacity className="border border-gray-300 p-3 rounded-md flex flex-row justify-center items-center">
-          <Text className="text-gray-500">Entrar com o Google</Text>
-        </TouchableOpacity>
+        <Linha />
       </View>
-
-      <TouchableOpacity className="mt-4">
-        <Text className="text-blue-500">Preciso de ajuda</Text>
-      </TouchableOpacity>
     </View>
   );
 }
