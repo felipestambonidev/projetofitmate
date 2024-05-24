@@ -49,7 +49,7 @@ export default function Page() {
             autoCapitalize="none"
           />
         </View>
-        <TouchableOpacity className="bg-blue-500 mt-1 p-3  rounded-md mb-4">
+        <TouchableOpacity className="bg-blue-500 mt-1 p-3  rounded-full mb-4">
           <Link href="/" className="text-center text-white">
             Criar conta FitMate
           </Link>
