@@ -6,15 +6,8 @@ import Menu from "../src/components/menu/Menu";
 export default function Main() {
   return (
     <View className="flex-1">
-      <View>
-        <MenuPrincipal />
-      </View>
-      <View>
-        <Text>Container</Text>
-      </View>
-      <View>
-        <Menu />
-      </View>
+      <MenuPrincipal />
+      <Menu />
     </View>
   );
 }

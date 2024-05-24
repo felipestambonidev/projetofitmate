@@ -14,7 +14,7 @@ export default function Page() {
           <MaterialIcons name="person" size={20} color="black" />
           <TextInput
             className="flex-1 ml-2"
-            placeholder="Digite o seu e-mail/usuário"
+            placeholder="Número de Telefone / E-mail"
             placeholderTextColor="black"
             autoCapitalize="words"
           />
