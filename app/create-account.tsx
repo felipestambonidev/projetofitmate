@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <View className=" flex-1 justify-center items-center bg-white">
       <MenuInicial />
-      <View className=" w-4/5 mt-5">
+      <View className=" w-4/5 mt-5 pt-44">
         <View className="flex-row items-center border p-2 rounded-full mb-4">
           <MaterialIcons name="person" size={20} color="black" />
           <TextInput

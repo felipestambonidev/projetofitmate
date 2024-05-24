@@ -9,7 +9,7 @@ const Icons = styled(MaterialIcons, 'pt-11')
 export default function Menu () {
     return(
         <View className="">
-            <View className="bg-slate-200  h-[100px]">
+            <View className="bg-slate-200 h-[100px]">
                 
             </View>
         </View>

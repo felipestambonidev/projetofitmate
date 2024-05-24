@@ -9,9 +9,8 @@ export default function MenuPrincipal() {
   return (
     <View>
       <View className="flex-row items-center justify-between px-4 py-2 bg-blue-500 h-[100px] ">
-        <Text className="pt-11 text-white">FitMAte</Text>
-        <Image source={require("../../img/Ellipse.png")} 
-        style={{width:200}}/>
+        <Image source={require("../../img/LogoFitMate_Menor.png")} 
+        style={{width:100, transform:[{scale: 0.5},{translateX: -80},{translateY: 43}]}}/>
         <NotificationIcon name="notifications" size={25} color="white" />
       </View>
     </View>
