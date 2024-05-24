@@ -3,6 +3,7 @@ import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import Linha from "../src/components/linha/Linha";
 import MenuInicial from "../src/components/menuinicial/MenuInicial";
+import Account from "../src/components/countagoogle/GoogleAccount";
 
 export default function Page() {
   return (
@@ -48,6 +49,7 @@ export default function Page() {
         </TouchableOpacity>
 
         <Linha />
+        <Account />
       </View>
     </View>
   );
