@@ -13,6 +13,7 @@ export default function Layout () {
         <Stack.Screen name="main"/>
         <Stack.Screen name="profile"/>
         <Stack.Screen name="create-account"/>
+        <Stack.Screen name="usuario" />
         </Stack>
     )
 }
