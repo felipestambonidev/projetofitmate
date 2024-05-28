@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { Link } from "expo-router";
+import { View, Text, TouchableOpacity,  } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { styled } from 'nativewind';
 
@@ -8,7 +9,7 @@ export default function Rodape () {
         <View className="bg-blue-500 p-4 flex-row justify-around">
             <TouchableOpacity className="items-center">
                 <Feather name="home" size={24} color="white" />
-                <Text className="text-white">Início</Text>
+                <Link href="/main" className="text-white">Início</Link>
             </TouchableOpacity>
             <TouchableOpacity className="items-center">
                 <Feather name="search" size={24} color="white" />

@@ -1,14 +1,21 @@
 import { Link } from "expo-router";
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
+import MenuPrincipal from "../src/components/menuprincipal/MenuPrincipal";
+import Perfil from "../src/components/perfil/Perfil";
+import Rodape from "../src/components/rodape/Rodape";
 
 export default function Profile() {
-    return(
+    return (
         <View>
-            <Text className="items-center bg-blue-600">Olá Profile</Text>
-            <Link href="/">Ir para Home</Link>
-            <Link href="/main">Ir para Main</Link>
-            <Link href="/profile">Ir para Profile</Link>
-            <Link href="/create-account">Ir para Create</Link>
+            <View>
+                <MenuPrincipal />
+            </View>
+            <ScrollView>
+                <Perfil />
+            </ScrollView>
+            <View>
+                <Rodape />
+            </View>
         </View>
     )
 }
