@@ -3,6 +3,7 @@ import { View, Text, TextInput, Image, ScrollView, TouchableOpacity } from "reac
 import { MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome } from '@expo/vector-icons';
 import { styled } from "nativewind";
+import ReviewsScreen from "../screens/ReviewsScreen";
 
 export default function Perfil() {
     return (
@@ -25,11 +26,11 @@ export default function Perfil() {
                     </View>
                 </View>
                 <View className="bg-slate-100 mt-5 pl-3 p-3 pb-5 ">
-                    <Text className="text-lg">Descrição</Text>
+                    <Text className="text-xl font-bold">Descrição</Text>
                     <Text className="pt-3">Olá! Sou (Nome do Personal), seu personal trainer comprometido em ajudá-lo a alcançar seus objetivos de condicionamento físico e bem-estar. Estou aqui para orientá-lo em sua jornada de transformação.</Text>
                 </View>
-                <View className="bg-slate-100 pl-3 mt-5">
-                    <Text className="text-lg">Avaliações</Text>
+                <View>
+                    <ReviewsScreen />
                 </View>
             </ScrollView>
         </View>
